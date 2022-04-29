@@ -1,4 +1,4 @@
-# Freddys Dashboard
+# Photo Reviewing
 
 ## Features
 
@@ -31,4 +31,10 @@ For start the application in production mode, run the following command:
 
 ```shell
 yarn build && yarn preview
+```
+
+For test the application, run the following command:
+
+```shell
+yarn test
 ```

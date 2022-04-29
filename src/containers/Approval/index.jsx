@@ -3,10 +3,10 @@ import { localStorageService } from '@/service';
 import { Fragment, useCallback, useEffect, useReducer, useState } from 'react';
 import { createApi } from 'unsplash-js';
 import { AddButton } from './AddButton';
-import { initialState, reducer } from './app';
 import { ButtonsMemo } from './Buttons';
 import { ImageSliderMemo } from './ImageSlider';
 import { PreviewerMemo } from './Previewer';
+import { initialState, reducer } from './store';
 
 const unsplashAPI = createApi({
   accessKey: 'PL1_R1SgnJI8YEzVT4XFoej2VGv5bf1HPQtH_GGDWgk',
