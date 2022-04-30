@@ -1,4 +1,5 @@
 import { Heading, Layout } from '@/components';
+import { config } from '@/config';
 import { localStorageService } from '@/service';
 import { Fragment, useCallback, useEffect, useReducer, useState } from 'react';
 import { createApi } from 'unsplash-js';
@@ -9,8 +10,7 @@ import { PreviewerMemo } from './Previewer';
 import { initialState, reducer } from './store';
 
 const unsplashAPI = createApi({
-  accessKey: 'PL1_R1SgnJI8YEzVT4XFoej2VGv5bf1HPQtH_GGDWgk',
-  fetch,
+  accessKey: config.unsplashAccessKey,
 });
 
 const Approval = () => {
